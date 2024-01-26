@@ -220,17 +220,3 @@ a {
     margin-top: 1px;
   }
 }
-@media (max-width:300) {
-  #replay{
-    width: 40px;
-    height: 40px;
-    font-size: 8px;
-    background: #ac9834;
-    color: #ffffff;
-    border-radius: 50%;
-    border: 2px solid #7b5843;
-    display: block;
-    text-align: center;
-    margin-left: 20px;
-  }
-}
