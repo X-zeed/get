@@ -346,11 +346,7 @@ function restartGame() {
   updateHighScore(); // อัปเดตการแสดงคะแนนสูง
 }
 
-// เพิ่มฟังก์ชัน restartGame ไว้ใน scope ที่เหมาะสม
-window.restartGame = restartGame;
-  
-  // Add the restartGame function to the global scope for the onclick attribute in the HTML
-  window.restartGame = restartGame;
+// window.restartGame = restartGame;
   
   function updateHighScore() {
     if (score > highScore) {
