@@ -40,7 +40,9 @@
   let scoreElement = document.getElementById("score");
 
   let isLineEnable = false;
-
+  const restartButton = document.getElementById("replay");
+  restartButton.addEventListener("click", restartGame);
+  
   const background = Bodies.rectangle(240, 360, 480, 720, {
     isStatic: true,
     render: { fillStyle: "#fe9" },
@@ -385,7 +387,7 @@ function restartGame() {
   }
 
   function newBall(x, y, size) {
-    c = Bodies.circle(x, y, size * 10, {
+    let c = Bodies.circle(x, y, size * 10, {
       render: {
         sprite: {
           texture: `assets/${size}.webp`,
