@@ -334,7 +334,7 @@ function gameOver() {
   engine.timing.timeScale = 0;
 
   const restartButton = document.getElementById("restartButton");
-  restartButton.style.display = "block";  // หรือ "flex" ตามที่คุณต้องการ
+  restartButton.style.display = "block";
 
   if (ball != null) World.remove(engine.world, ball);
 }
