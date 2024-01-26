@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="icon" type="image/x-icon" href="assets/12.webp" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;700&display=swap">
+
+  <link href="index.css" rel="stylesheet" />
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+
+  <title>Get JJ</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="item" id="game">
+      <div id="overlay">
+        <!-- <button id="playAgainButton" onclick="location.reload()">
+            Play Again
+          </button> -->
+        <button id="restartButton" onclick="restartGame()">Play Again</button>
+      </div>
+      <div class="bar">
+        <button id="replay" onclick="restartGame()" class="fas fa-sync-alt"></button>
+        <span id="score">0</span>
+      </div>
+      <canvas id="canva"></canvas>
+      <div id="floor"></div>
+    </div>
+
+    <div class="empty"></div>
+    <div class="empty"></div>
+  </div>
+
+  <script defer src="index.js"></script>
+</body>
+
+</html>
